@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Registration Form</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+    <header>
+        <h1>Jitume Technical Training Institute</h1>
+        <p style="text-align:center;">Student Registration & Information Form</p>
+    </header>
+    <main>
+        <section>
+            <h2>Student Registration Form</h2>
+            <form action="#" method="POST">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required autocomplete="email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="course">Course Applying For:</label>
+                <input type="text" id="course" name="course" placeholder="e.g., IT, Accounting" required>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+
+                <label for="studentid">Student ID:</label>
+                <input type="text" id="studentid" name="studentid" value="JT2025" readonly>
+
+                <label for="agree">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    I agree to the terms and conditions
+                </label>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Course Schedule</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Start Date</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Information Technology</td>
+                    <td>01 Sept 2025</td>
+                    <td>6 Months</td>
+                </tr>
+                <tr>
+                    <td>Accounting</td>
+                    <td>15 Sept 2025</td>
+                    <td>4 Months</td>
+                </tr>
+                <tr>
+                    <td>Graphic Design</td>
+                    <td>20 Sept 2025</td>
+                    <td>5 Months</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Student Guidelines</h2>
+            <ul>
+                <li>Attend all classes and practical sessions.</li>
+                <li>Maintain good conduct on campus.</li>
+                <li>Submit assignments on time.</li>
+                <li>Follow the institute’s code of ethics.</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1581090700227-0fdbb3be6c55?auto=format&fit=crop&w=800&q=80" alt="Students studying together">
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align:center;">&copy; 2025 Jitume Technical Training Institute</p>
+    </footer>
+</body>
+</html>
